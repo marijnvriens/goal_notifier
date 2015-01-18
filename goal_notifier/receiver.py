@@ -2,7 +2,7 @@ __author__ = 'marijn'
 
 from goals import GaGoalSource
 
-class Notifier(object):
+class Receiver(object):
     def __init__(self, ga_conf_filename):
         self._source = GaGoalSource(ga_conf_filename)
 
