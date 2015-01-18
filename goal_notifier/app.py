@@ -9,8 +9,8 @@ from receiver import Receiver
 
 def main():
     log.info("Starting")
-    notifier = Receiver("../ga_config.json")
-    notifier.connect_goal_sources()
-    pprint(notifier.get_data())
+    receiver = Receiver("../ga_config.json")
+    receiver.connect_goal_sources()
+    pprint(receiver.get_data())
     log.info("Ending")
 
